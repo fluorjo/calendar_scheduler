@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:calendar_scheduler/component/main_calendar.dart';
-import 'package:table_calendar/table_calendar.dart';
 import 'package:calendar_scheduler/component/schedule_card.dart';
 import 'package:calendar_scheduler/component/today_banner.dart';
 import 'package:calendar_scheduler/component/schedule_bottom_sheet.dart';
@@ -31,6 +30,7 @@ class _HomeScreenState extends State<HomeScreen> {
             isDismissible: true,
             //배경 탭했을 때 bottomsheet 닫기
             builder: (_) => const ScheduleBottomSheet(),
+            isScrollControlled: true,
           );
         },
         child: const Icon(
