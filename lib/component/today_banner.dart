@@ -15,7 +15,7 @@ class TodayBanner extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final textStyle = const TextStyle(
+    const textStyle = TextStyle(
       fontWeight: FontWeight.w600,
       color: Colors.white,
     );
@@ -28,7 +28,11 @@ class TodayBanner extends StatelessWidget {
           Text(
             '${selectedDate.year}년 ${selectedDate.month}월 ${selectedDate.day}일',
             style: textStyle,
-          )
+          ),
+          Text(
+            '$count개', // 일정 개수 표시
+            style: textStyle,
+          ),
         ]),
       ),
     );

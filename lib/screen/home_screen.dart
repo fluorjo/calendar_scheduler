@@ -51,10 +51,16 @@ class _HomeScreenState extends State<HomeScreen> {
           const SizedBox(
             height: 8.0,
           ),
-          TodayBanner(
-            selectedDate: selectedDate,
-            count: 0,
+          StreamBuilder<List<Schedule>>(
+            stream: GetIt.I<LocalDatabase>().watchSchedules(selectedDate),
+            builder: (context, snapshot) {
+              return TodayBanner(
+                selectedDate: selectedDate,
+                count: snapshot.data?.length ?? 0,
+              );
+            },
           ),
+
           const SizedBox(
             height: 8.0,
           ),
@@ -69,13 +75,20 @@ class _HomeScreenState extends State<HomeScreen> {
                   itemCount: snapshot.data!.length,
                   itemBuilder: (context, index) {
                     final schedule = snapshot.data![index];
-                    return Padding(
-                      padding: const EdgeInsets.only(
-                          bottom: 8.0, left: 8.0, right: 8.0),
-                      child: ScheduleCard(
-                        content: schedule.content,
-                        startTime: schedule.startTime,
-                        endTime: schedule.endTime,
+                    return Dismissible(
+                      key: ObjectKey(schedule.id),
+                      direction: DismissDirection.startToEnd,
+                      onDismissed: (DismissDirection direction) {
+                        GetIt.I<LocalDatabase>().removeSchedule(schedule.id);
+                      },
+                      child: Padding(
+                        padding: const EdgeInsets.only(
+                            bottom: 8.0, left: 8.0, right: 8.0),
+                        child: ScheduleCard(
+                          content: schedule.content,
+                          startTime: schedule.startTime,
+                          endTime: schedule.endTime,
+                        ),
                       ),
                     );
                   },
