@@ -7,8 +7,15 @@ import 'package:calendar_scheduler/provider/schedule_provider.dart';
 import 'package:calendar_scheduler/repository/schedule_repository.dart';
 import 'package:provider/provider.dart';
 
+import 'package:firebase_core/firebase_core.dart';
+import 'package:calendar_scheduler/firebase_options.dart';
+
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
+
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+  );
 
   await initializeDateFormatting();
 
@@ -22,7 +29,7 @@ void main() async {
   runApp(
     ChangeNotifierProvider(
       create: (_) => scheduleProvider,
-      child:  MaterialApp(
+      child: MaterialApp(
         home: HomeScreen(),
       ),
     ),
