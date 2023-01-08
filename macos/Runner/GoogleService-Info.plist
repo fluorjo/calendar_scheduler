@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>567426905461-ddod2eu0hcj9q1rgved1ffls8noesv03.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.567426905461-ddod2eu0hcj9q1rgved1ffls8noesv03</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCi7QYGiGhn_aCJQSGR1ll0wJ0Pnua23MU</string>
+	<key>GCM_SENDER_ID</key>
+	<string>567426905461</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.example.calendarScheduler</string>
+	<key>PROJECT_ID</key>
+	<string>calendar-scheduler-fluorjo</string>
+	<key>STORAGE_BUCKET</key>
+	<string>calendar-scheduler-fluorjo.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:567426905461:ios:8d0263e840c32a17d80f3c</string>
+</dict>
+</plist>

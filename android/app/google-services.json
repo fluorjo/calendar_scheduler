@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "567426905461",
+    "project_id": "calendar-scheduler-fluorjo",
+    "storage_bucket": "calendar-scheduler-fluorjo.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:567426905461:android:b1093f22077511a7d80f3c",
+        "android_client_info": {
+          "package_name": "calendar.fluorjo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "567426905461-8j9t9dve0lv32c8h7g6e2q24kciuhm50.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBOkENIFrU5tCP78-HxmxdMEMtHiwz1MUU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "567426905461-8j9t9dve0lv32c8h7g6e2q24kciuhm50.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:567426905461:android:77070802b131a52dd80f3c",
+        "android_client_info": {
+          "package_name": "com.example.calendar_scheduler"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "567426905461-8j9t9dve0lv32c8h7g6e2q24kciuhm50.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBOkENIFrU5tCP78-HxmxdMEMtHiwz1MUU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "567426905461-8j9t9dve0lv32c8h7g6e2q24kciuhm50.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
