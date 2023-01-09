@@ -24,13 +24,13 @@ class ScheduleCard extends StatelessWidget {
         borderRadius: BorderRadius.circular(8.0),
       ),
       child: Padding(
-        padding: const EdgeInsets.all(16.0),
+        padding: const EdgeInsets.all(8.0),
         child: IntrinsicHeight(
           child: Row(
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
               _Time(startTime: startTime, endTime: endTime),
-              const SizedBox(width: 16.0),
+              const SizedBox(width: 8.0),
               _Content(
                 content: content,
               ),

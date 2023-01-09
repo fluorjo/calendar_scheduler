@@ -30,6 +30,7 @@ void main() async {
     ChangeNotifierProvider(
       create: (_) => scheduleProvider,
       child: MaterialApp(
+        debugShowCheckedModeBanner: false,
         home: HomeScreen(),
       ),
     ),
